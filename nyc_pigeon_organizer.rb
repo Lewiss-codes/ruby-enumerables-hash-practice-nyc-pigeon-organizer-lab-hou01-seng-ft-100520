@@ -8,12 +8,14 @@ def nyc_pigeon_organizer(data)
       name.each do |name|
         #binding.pry
         if !final_array[name]
-          final_array = {}
+          final_array[name] = {}
       end
       if !final_array[name][key]
         !final_array[name][key] = []
     end
     final_array[name][key].push(inner_key.to_s)
   end
+end
+end
   #binding.pry
 end
