@@ -1,13 +1,19 @@
 require 'pry'
+
 def nyc_pigeon_organizer(data)
   # write your code here!
   hash.each_with_object({}) do |(key, value), final_array|
+    #binding.pry 
     value.each do |inner_key, names|
       name.each do 
-        binding.pry
+        #binding.pry
+        if !final_array[name]
+          final_array = {}
       end
+      if !final_array[name][key]
+        !final_array[name][key] = []
     end
-    final_array
+    final_array[name][key].push(inner_key)
   end
   binding.pry
 end
